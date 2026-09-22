@@ -1,0 +1,71 @@
+1. Novo diretorio, vinculo com o vs code e terminal interno
+  cria o vinculo da pasta no vscode -> file open folder;
+2. No terminal cria o repositorio, a pasta .git -> git init
+3. Faz as configurações locais -> user.name e user.mail
+  git config --local user.name "Daniel Ferreira"
+  git config --local user.email dan.fatec2025@gmail.com
+4. Configurar o vscode para ser o editor padrão
+  git config --global core.editor "code --wait"
+5. Dar o nome da branch
+  git config --global init.defaultBranch main
+6. Verificação -> 
+  git config --list  (para paginar seta para cima/baixo ou q para sair)
+  ou a versão mais detalhada: git config --list --show-origins
+7.  Estados dos arquivos: untracked; tracked(unmodified, modified, staged)
+  untracked -> não estou sob controle de versão
+  tracked -> estão sobre controle de versão
+  unmodified -> versão presente = ultima permanente
+  modified -> versão presente está editada em relação a ultima permanente
+  staged -> pronto para participar do próximo commit, somente arquivos neste estadosão tornados permanentes com o commit
+
+7.1 git status, mensagem mais curta -> git status -s
+mostra como estão os arquivos no diretorio. vermelho untracked, verde staged
+
+8. Introduzindo o arquivo para o controle de versão
+  git add calculadora.py
+
+9. Torna a versão permanente e abre a aba para digitar a msg do commit
+  git commit
+
+10. git status -s -> mostra os arquivos untracked ?? vermelho no dir
+etorio
+
+11. git log -> mostra a lista de commits; git log -p mostra o codigo de cada commit -> git log --pretty=oneline mostra o commit sintatico
+
+12. git diff -> mostra o conteudo dos commits
+
+13. marcando o commit atual como importante aplicando uma tag
+  git tag -a v1.0.0 -m "operação de somar implementada e testada"
+  tags podem ser leves ou anotadas. Uma tag leve é apenas um ponteiro temporário para algum commit. Uma tag anotada serve para destacar o commit como especial e ela inclui o nome do autor, uma msg, data, etc...
+
+14. visualizando a tag criada -> git tag --list ou git show v1.0.0 versão simplificada.
+
+15. Torne esta versão permanente e destaque-a como importante com
+  git add teste_calculadora.py
+  git commit -m “apostila02(git-python): teste da funcao subtrair"
+  git tag -a v1.0.1 -m "operação de subtrair implementada e testada"
+
+16. exibir as tags -> git tag
+
+17. stado staged -> git add calculadora.py
+
+18. tornando a versão permanente -> git commit -m "apostila02(git-python): funcao multiplicar implementada"
+
+19. staged -> git add teste_calculadora.py
+
+20. tornando permanente -> git commit -m “apostila02(git-python): teste da funcao multiplicar"
+
+21. versão especial -> git tag -a v1.0.2 -m "operação de multiplicar implementada e testada"
+
+22. visualizar os commits -> git log --pretty=oneline
+
+22. visualizar as tags -> git tag
+
+23. verificando o status dos arquivos -> git status -s
+
+
+Apostla02(git-python): funcao subtrair implementada
+
+
+
+
