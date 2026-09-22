@@ -63,6 +63,8 @@ etorio
 
 23. verificando o status dos arquivos -> git status -s
 
+24. tornando permanente
+  git commit -a -m "apostila02(git-python): teste da funcao dividir"
 
 Apostla02(git-python): funcao subtrair implementada
 
