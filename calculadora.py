@@ -1,3 +1,5 @@
+# atualização: 03/10/26
+
 def somar (a,b):
   return a + b
 
